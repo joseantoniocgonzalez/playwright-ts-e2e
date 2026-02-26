@@ -1,0 +1,19 @@
+{
+  "name": "playwright-ts-e2e",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright + TypeScript E2E automation portfolio (POM, CI, HTML report via GitHub Pages).",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20 <21"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "smoke": "playwright test --grep @smoke",
+    "regression": "playwright test --grep @regression",
+    "report": "playwright show-report",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  }
+}
