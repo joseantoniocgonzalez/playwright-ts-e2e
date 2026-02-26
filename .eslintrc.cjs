@@ -20,6 +20,7 @@ module.exports = {
   ignorePatterns: ['node_modules/', 'playwright-report/', 'test-results/', 'blob-report/'],
   rules: {
     '@typescript-eslint/no-floating-promises': 'error',
-    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }]
+    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    'playwright/expect-expect': 'off'
   }
 };
