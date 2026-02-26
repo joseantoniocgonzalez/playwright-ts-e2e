@@ -120,3 +120,10 @@ Progress
 - CI:
   - PR: smoke
   - Nightly: regression + publish Pages report
+
+GitHub CLI (optional)
+---------------------
+
+If you have GitHub CLI installed, you can clone the repository via SSH::
+
+  gh repo clone joseantoniocgonzalez/playwright-ts-e2e -- --recurse-submodules=no
