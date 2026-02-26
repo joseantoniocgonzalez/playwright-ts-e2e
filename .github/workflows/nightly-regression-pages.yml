@@ -45,7 +45,7 @@ jobs:
           BASE_URL: https://www.saucedemo.com
         run: |
           set +e
-          npm run regression
+          npx playwright test --grep "|"
           echo "exit_code=$?" >> $GITHUB_OUTPUT
           exit 0
 
